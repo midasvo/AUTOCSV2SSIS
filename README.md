@@ -1,5 +1,9 @@
 # CSV2SSIS
-Simple script that monitors a directory for new CSV files and calls the SSIS package.
+Simple script that monitors a directory for new CSV files and calls the SSIS package. This is meant to save time and effort if you have new logfiles that need to be imported everyday. 
+
+Pre-Conditions:
+- Your CSV file contains a row which uniquely identifies the file and/or machine. For example you log from a machine called 'M1', add a column 'Machine' and have each row contain 'M1'. This name is extracted from the file and used as the new filename. 
+- Your SSIS package has Flat File Sources which point to the correct filename in the SSISWorkingDirectory. In our example this means that for our M1 logfile the SSIS package uses 'M1.csv' as a Flat File Source.
 
 ## Steps
 
