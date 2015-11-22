@@ -1,4 +1,4 @@
-# CSV2SSIS
+# AUTOCSV2SSIS
 Simple script that monitors a directory for new CSV files and calls the SSIS package. This is meant to save time and effort if you have new logfiles that need to be imported everyday. 
 
 Pre-Conditions:
