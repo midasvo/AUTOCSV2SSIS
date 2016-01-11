@@ -91,7 +91,7 @@ function Get-Machine-Name($logfilename) {
     Write-Host "Hello " $MonitoringDirectory\$logfilename -foreground Green
     $data = Import-CSV $MonitoringDirectory\$logfilename -Delimiter ';'
     $machinename = $data[1].Machine # Name of the row that will become the filename, SSIS points to this file.
-    Write-Host "Filanem: $machinename"
+    Write-Host "Filename: $machinename"
     return $machinename
 }
 
